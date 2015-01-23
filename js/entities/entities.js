@@ -18,11 +18,14 @@
 			}]);
 
 			this.body.setVelocity(5,0);
+			// movement speed
 		},
 
 		update: function(delta) {
 			if(me.input.isKeyPressed("right")){
-
+				// adds to position of x by the velocity defined above in
+				// aesVelocity() and multiplying it by me.timer.tick.
+				// me.timer.tick makes the movement look smooth
 				this.body.vel.x += this.body.accel.x * me.timer.tick;
 
 			}else{
