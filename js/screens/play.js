@@ -7,8 +7,11 @@ game.PlayScreen = me.ScreenObject.extend({
 		game.data.score = 0;
 
 		me.levelDirector.loadLevel("level01");
+		// nameing convention first word is allways lower case second word upper case
 		var player = me.pool.pull("player", 0, 420,{});
+		// pulling player from pool
 		me.game.world.addChild(player, 5);
+		// the higher the number the closer to the screen player is
 
 		me.input.bindKey(me.input.KEY.RIGHT, "right");
 
