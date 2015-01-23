@@ -14,6 +14,7 @@ game.PlayScreen = me.ScreenObject.extend({
 		// the higher the number the closer to the screen player is
 
 		me.input.bindKey(me.input.KEY.RIGHT, "right");
+		// binding right key for movement
 
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();
