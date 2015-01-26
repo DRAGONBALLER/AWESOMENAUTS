@@ -17,8 +17,8 @@
 				}
 			}]);
 
-			this.body.setVelocity(5,0);
-			// movement speed
+			this.body.setVelocity(5,20);
+			// movement speed 
 		},
 
 		update: function(delta) {
