@@ -18,7 +18,8 @@
 			}]);
 
 			this.body.setVelocity(5,20);
-			// movement speed 
+			// movement speed vurticle velocity has benn set to 20
+			// to allow the character to touch the ground
 		},
 
 		update: function(delta) {
